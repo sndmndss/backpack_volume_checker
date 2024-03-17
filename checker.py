@@ -7,7 +7,7 @@ from helpers import account_volume
 
 public_key = input("Enter your public key: ")
 private_key = Ed25519PrivateKey.from_private_bytes(
-            base64.b64decode(input("Enter your private key: ")))
+            base64.b64decode(input("Enter your secret key: ")))
 instruction = "fillHistoryQueryAll"
 timestamp = int(time.time() * 1e3)
 
